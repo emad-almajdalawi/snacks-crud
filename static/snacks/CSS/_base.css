@@ -27,7 +27,7 @@ header {
     align-items: center;
 }
 
-#button, #nav_button{
+#button, #nav_button, #button_danger{
     color: white;
     font-size: 1.5vw; 
     padding: 0.75vw 1vw; 
@@ -44,18 +44,18 @@ header {
     padding: 1vw 1.5vw; 
 }
 
-#nav_button:hover, #button:hover {
+#nav_button:hover, #button:hover, #button_danger:hover {
     background-color: #4CAF50; 
     box-shadow: 0 1vw 1vw 0 black, 0 1vw 3vw 0 black;
     cursor: pointer;
 }
 
 #button_danger{
-    background-color:#b58d8d; 
+    background-color:#af4c4c; 
 }
 
 #button_danger:hover {
-    background-color: #af4c4c; 
+    background-color: #d72222; 
 }
 
 #body_content{
