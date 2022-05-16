@@ -1,6 +1,5 @@
 {% load static %}
 
-<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}"> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,43 +8,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'snacks/CSS/_base.css' %}">
 </head>
-<style>
-    button {padding: 1vw 1.5vw; stroke-width: 0.25vw; background-color:#8DB596; border: black; border-radius: 1vw; transition-duration: 0.4s; box-shadow: 0 0.8vw 1.6vw 0 black, 0 0.6vw 2vw 0 black;}
-    button:hover {background-color: #4CAF50; box-shadow: 0 1.2vw 1.6vw 0 black, 0 1.7vw 5vw 0 black;}
-</style>
-<body id = 'body' style = 'background-color:#0D1117; font-size: 2vw; color: white;'>
-    <header id = 'header' style = 'background-color:#161B22;  display: grid; grid-template-columns: 1.25fr 3fr; justify-content: center; text-align: center; padding:1vw;'>
+<body id = 'body'>
+    <header id = 'header'>
         <div>
-            <h1>Django Snacks</h1>
+            <p id="title">Django Snacks</p>
         </div>
         <nav>
-            <ul id = 'nav_ul' style = 'display: flex; justify-content: space-around; align-items: center;'>
-                <a href={% url 'snack_list' %}><button type="button" id='nav_button' style= 'font-size: 2.2vw;'>HOME</button></a>
+            <ul id = 'nav_ul'>
+                <a href={% url 'snack_list' %}><button type="button" id='nav_button'>HOME</button></a>
             </ul>
         </nav>
     </header>
     </br>
-    <div id = 'body_content' style = 'margin: 2vw;'>
+    <div id = 'body_content'>
         {% block body_content %}{% endblock %}
         </br>
     </div>
    
 
-    <footer id = 'footer' style = 'display: flex; justify-content: space-around; text-align: center; background-color:#161B22; font-size: 1vw; padding:1vw;'>
+    <footer id = 'footer'>
         <div>
             <p>© Copyright reserved</p>
         </div>
 
-        <div id = 'footer_imgs_div' style = 'display: flex; justify-content: center; text-align: center;'>
+        <div id = 'footer_imgs_div'>
             <a href="https://www.instagram.com/">
-                <img src="{% static 'imgs/instagram.png' %}" alt="lnstagram" id ='contact_img' class="contact_img" style = 'width: 3.5vw;height: 3.5vw;object-fit: scale-down; margin: 0.3vw;'>
+                <img src="{% static 'snacks/imgs/instagram.png' %}" alt="lnstagram" id ='contact_img' class="contact_img">
             </a>
             <a href="https://www.facebook.com/" >
-                <img src="{% static 'imgs/facebook.png' %}" alt="FaceBook" id ='contact_img' class="contact_img" style = 'width: 3.5vw;height: 3.5vw;object-fit: scale-down; margin: 0.3vw;'>
+                <img src="{% static 'snacks/imgs/facebook.png' %}" alt="FaceBook" id ='contact_img' class="contact_img">
             </a>
         </div>
     </footer>
 
 </body>
 </html>
+
