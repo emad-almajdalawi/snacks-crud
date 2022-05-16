@@ -1,6 +1,5 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Snack
-# from django.db import models
 
 
 class SnackListView(ListView):
@@ -8,12 +7,11 @@ class SnackListView(ListView):
     template_name = 'snack_list.html'
     context_object_name = 'order_object'
 
-    # def get_queryset(self):
-    #     return models.Snack.objects.all()
 
 class SnackDetailView(DetailView):
     model = Snack
     template_name = 'snack_detail.html'
+
 
 class SnackCreateView(CreateView):
     model = Snack
