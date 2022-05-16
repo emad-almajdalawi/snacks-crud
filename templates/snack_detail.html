@@ -4,14 +4,16 @@
 
 {% block body_content %}
 <p>
-    Snack Detils:
+    Snack Detils:</br>
     </br>
-    </br>
-    Title: {{snack.title}}
-    </br>
-    Description: {{snack.description}}
-    </br>
-    Purchaser: {{snack.purchaser}}
+    Title: {{snack.title}} </br>
+    Description: {{snack.description}} </br>
+    Purchaser: {{snack.purchaser}} </br>
+
+    <div id="'crud_butoons">
+        <a href={% url 'snack_edit' pk=snack.pk %}><button type="button" id='button'>Edit</button></a>
+    </div>
+
 </p>
 
 {% endblock %}

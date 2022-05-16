@@ -36,7 +36,7 @@ header {
     border: black; 
     border-radius: 1vw; 
     transition-duration: 0.4s; 
-    box-shadow: 0 0.8vw 1.6vw 0 black, 0 0.6vw 2vw 0 black;
+    box-shadow: 0 0.5vw 1vw 0 black, 0 0.5vw 1vw 0 black;
 }
 
 #nav_button{
@@ -74,4 +74,10 @@ footer{
     height: 3.5vw;
     object-fit: scale-down; 
     margin: 0.3vw;
+}
+
+#crud_butoons{
+    display: flex; 
+    justify-content: space-around; 
+    text-align: center;
 }
