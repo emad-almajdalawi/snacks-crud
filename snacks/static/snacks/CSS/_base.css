@@ -1,14 +1,14 @@
 *{
-    font-size: 1.5vw; 
-    color: white;
     font-family: 'EB Garamond', serif;
 }
 
 body{
     background-color:#0D1117; 
+    font-size: 1.5vw; 
+    color: white;
 }
 
-#header {
+header {
     background-color:#161B22; 
     display: grid; 
     grid-template-columns: 1.25fr 3fr; 
@@ -27,20 +27,26 @@ body{
     align-items: center;
 }
 
-#nav_button{
-    padding: 1vw 1.5vw; 
+#button, #nav_button{
+    color: white;
+    font-size: 1.5vw; 
+    padding: 0.75vw 1vw; 
     stroke-width: 0.25vw; 
     background-color:#8DB596; 
     border: black; 
     border-radius: 1vw; 
     transition-duration: 0.4s; 
     box-shadow: 0 0.8vw 1.6vw 0 black, 0 0.6vw 2vw 0 black;
-    font-size: 2.2vw;
 }
 
-#nav_button:hover {
+#nav_button{
+    font-size: 2vw;
+    padding: 1vw 1.5vw; 
+}
+
+#nav_button:hover, #button:hover {
     background-color: #4CAF50; 
-    box-shadow: 0 1.2vw 1.6vw 0 black, 0 1.7vw 5vw 0 black;
+    box-shadow: 0 1vw 1vw 0 black, 0 1vw 3vw 0 black;
     cursor: pointer;
 }
 
@@ -48,7 +54,7 @@ body{
     margin: 1.75vw;
 }
 
-#footer{
+footer{
     display: flex; 
     justify-content: space-around; 
     text-align: center; 
@@ -69,4 +75,3 @@ body{
     object-fit: scale-down; 
     margin: 0.3vw;
 }
-

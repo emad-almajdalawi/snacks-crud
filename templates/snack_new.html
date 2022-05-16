@@ -1,2 +1,27 @@
 {% extends '_base.html'%}
 
+{% block title %}Add New Snacks{% endblock %}
+
+{% block body_content %}
+
+<!-- <form>
+    <p><label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br></p>
+    <p><label for="description">Description:</label><br>
+    <input type="text" id="description" name="description"><br></p>
+    <p><label for="purchaser">Purchaser:</label><br>
+        <select id="cars" lable='Purchaser'>
+            <option value="admin">admin</option>
+            <option value="emad">Emad</option>
+          </select>
+        <br></p>
+    <input type="submit" value="Submit">
+  </form> -->
+
+<form action="{% url 'snack_new' %}" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Submit" id='button'>
+</form>
+
+{% endblock %}

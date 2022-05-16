@@ -1,0 +1,77 @@
+*{
+    font-family: 'EB Garamond', serif;
+}
+
+body{
+    background-color:#0D1117; 
+    font-size: 1.5vw; 
+    color: white;
+}
+
+header {
+    background-color:#161B22; 
+    display: grid; 
+    grid-template-columns: 1.25fr 3fr; 
+    justify-content: center; 
+    text-align: center; 
+    padding:1vw;
+}
+
+#title{
+    font-size: 3vw;
+}
+
+#nav_ul {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+}
+
+#button, #nav_button{
+    color: white;
+    font-size: 1.5vw; 
+    padding: 0.75vw 1vw; 
+    stroke-width: 0.25vw; 
+    background-color:#8DB596; 
+    border: black; 
+    border-radius: 1vw; 
+    transition-duration: 0.4s; 
+    box-shadow: 0 0.8vw 1.6vw 0 black, 0 0.6vw 2vw 0 black;
+}
+
+#nav_button{
+    font-size: 2vw;
+    padding: 1vw 1.5vw; 
+}
+
+#nav_button:hover, #button:hover {
+    background-color: #4CAF50; 
+    box-shadow: 0 1vw 1vw 0 black, 0 1vw 3vw 0 black;
+    cursor: pointer;
+}
+
+#body_content{
+    margin: 1.75vw;
+}
+
+footer{
+    display: flex; 
+    justify-content: space-around; 
+    text-align: center; 
+    background-color:#161B22; 
+    font-size: 1vw;
+    padding:1vw;
+}
+
+#footer_imgs_div{
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+}
+
+#contact_img{
+    width: 3.5vw;
+    height: 3.5vw;
+    object-fit: scale-down; 
+    margin: 0.3vw;
+}
