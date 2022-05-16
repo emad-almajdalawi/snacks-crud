@@ -50,6 +50,14 @@ header {
     cursor: pointer;
 }
 
+#button_danger{
+    background-color:#b58d8d; 
+}
+
+#button_danger:hover {
+    background-color: #af4c4c; 
+}
+
 #body_content{
     margin: 1.75vw;
 }
@@ -76,8 +84,13 @@ footer{
     margin: 0.3vw;
 }
 
-#crud_butoons{
+#crud_btns_container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+#crud_btns{
     display: flex; 
     justify-content: space-around; 
-    text-align: center;
+    align-items: center;
 }

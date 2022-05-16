@@ -1,1 +1,16 @@
 {% extends '_base.html'%}
+
+{% block title %}Delete Snacks{% endblock %}
+
+{% block body_content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <p>
+        Delete {{ snack.title }} <br>
+        Are you sure!
+    </p>
+    <input type="submit" value="Delete" id='button_danger'>
+</form>
+
+{% endblock %}

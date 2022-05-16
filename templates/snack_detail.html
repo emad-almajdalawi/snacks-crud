@@ -10,10 +10,13 @@
     Description: {{snack.description}} </br>
     Purchaser: {{snack.purchaser}} </br>
 
-    <div id="'crud_butoons">
+<div id="crud_btns_container">
+    <div id="crud_btns">
         <a href={% url 'snack_edit' pk=snack.pk %}><button type="button" id='button'>Edit</button></a>
+        <a href={% url 'snack_delete' pk=snack.pk %}><button type="button" id='button_danger'>Delete</button></a>
     </div>
-
+    <div></div>
+</div>
 </p>
 
 {% endblock %}
