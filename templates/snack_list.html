@@ -3,11 +3,12 @@
 {% block title %}Snacks List{% endblock %}
 
 {% block body_content %}
-<h2>Snacks List Page</h2>
-</br>
+<h2>Snacks List:</h2>
     <ul>
     {% for snack in order_object %}
         <li><a href={% url 'snack_detail' pk=snack.pk %}>{{snack.title}} - {{snack.purchaser}}</a></li>
     {% endfor %}
     </ul>
+<br>
+<a href={% url 'snack_new' %}><button type="button" id='button'>Add Snack</button></a>
 {% endblock %}
